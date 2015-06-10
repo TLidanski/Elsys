@@ -137,7 +137,6 @@ int main() {
 			abort();
 		}	
 	}
-	pthread_create(&input, NULL, arguments_receiver, NULL);
 
 
 	/* Joining the threads */
@@ -148,7 +147,6 @@ int main() {
 			abort();
 		}	
 	}
-	pthread_join(input, NULL);
 
 	pthread_mutex_destroy(&lock);   // Destroying the mutex
 
