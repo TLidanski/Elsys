@@ -129,7 +129,7 @@ int main() {
 		abort();
 	}	
 
-	/* Creating threads for each miner and the user input */
+	/* Creating threads for each miner */
 	for (i=0;i<miners;i++) {
 		handle = pthread_create(&thread[i], NULL, mine, NULL);
 		if (handle != 0) {
